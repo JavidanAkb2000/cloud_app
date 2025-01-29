@@ -1,29 +1,24 @@
- Functionalities
+## Functionalities
 
-POST:
-
+### **POST - Create a User**
+```json
 {
   "name": "Javidan Akbarov",
   "email": "johndoe@example.com",
   "password": "password123"
 }
 
-
-API url
-
 http://localhost:5000
-http://localhost:5000/users
-
 GET all users: GET http://localhost:5000/users
-UPDATE a user: PUT http://localhost:5000/users/:id
-DELETE a user: DELETE http://localhost:5000/users/:id
+Create a user: POST http://localhost:5000/users
+Update a user: PUT http://localhost:5000/users/:id
+Delete a user: DELETE http://localhost:5000/users/:id
 
+MongoDB Admin Connection
 
-
-Connection to admin 
 docker exec -it mongo_db mongosh -u root -p rootpassword --authenticationDatabase admin
 
+Then, inside the MongoDB shell, run:
 use cloudDB
-
 show collections
 db.users.find().pretty()
