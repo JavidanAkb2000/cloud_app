@@ -2,6 +2,8 @@
 
 ### **POST - Create a User**
 ```json
+POST:
+
 {
   "name": "Javidan Akbarov",
   "email": "johndoe@example.com",
